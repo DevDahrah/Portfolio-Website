@@ -24,12 +24,13 @@
 
 }
 
- /*========== Theme Change ==========*/
+/*========== Theme Change ==========*/
 
- .dark-theme {
-  --text-color: hsl(180, 0, 100%);
+.dark-theme {
+  --text-color: hsl(180, 0%, 90%); 
   --primary-body-color: hsl(228, 15%, 20%);
- }
+}
+
 
 /*=============== BASE ===============*/
 * {
@@ -47,6 +48,11 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--primary-body-color);
   color: var(--text-color);
+}
+
+.navbar-brand,
+.navbar {
+  display: none;
 }
 
 
@@ -352,52 +358,50 @@ footer {
   padding-block: 5rem 2rem;
 }
 
+/*===============Responsive Design ===============*/
 
-/*=============== HEADER & NAV ===============*/
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px; 
+  }
+
+  header nav {
+    margin-left: 0;
+  }
+
+  main {
+    margin: 2rem 1rem; 
+  }
+
+  #home, .skill_body, .my_projects {
+    flex-direction: column; /* Stack items in the home section vertically */
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .all_projects {
+    margin-bottom: 1.5rem;
+  }
+
+  #home h2 {
+    font-size: var(--biggest-font-size); /* Maintain the font size for the header in the home section */
+  }
+
+  #home img {
+    max-width: 100%;
+  }
+
+  #skills img,
+  #projects img {
+    max-width: 100%;
+  }
+
+  #skill_list,
+  .all_projects {
+    width: 100%;
+  }
+}
 
 
 
-/*=============== HOME ===============*/
-
-
-/*=============== BUTTON ===============*/
-
-
-/*=============== ABOUT ===============*/
-
-
-/*=============== SKILLS ===============*/
-
-
-/*=============== SERVICES ===============*/
-
-
-/*=============== PROJECTS ===============*/
-
-
-/*=============== CONTACT ===============*/
-
-
-/*=============== FOOTER ===============*/
-
-
-/*=============== SCROLL BAR ===============*/
-
-
-/*=============== SCROLL UP ===============*/
-
-
-/* Show Scroll Up */
-
-
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
-
-
-/* For medium devices */
-
-
-/* For large devices */
-
-  /* Responsive Design */
 
