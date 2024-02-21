@@ -50,11 +50,6 @@ body {
   color: var(--text-color);
 }
 
-.navbar-brand,
-.navbar {
-  display: none;
-}
-
 
 header {
   background-color:  #4070f4;
@@ -345,6 +340,8 @@ button {
 footer {
   text-align: center;
   color: var(--text-color);
+  border-top: 1px solid #e2e1de;
+  padding-top: 0.5rem;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -366,7 +363,7 @@ footer {
   }
 
   header nav {
-    margin-left: 0;
+    margin: 0;
   }
 
   main {
@@ -374,7 +371,7 @@ footer {
   }
 
   #home, .skill_body, .my_projects {
-    flex-direction: column; /* Stack items in the home section vertically */
+    flex-direction: column; 
     text-align: center;
     margin-bottom: 1.5rem;
   }
@@ -384,7 +381,7 @@ footer {
   }
 
   #home h2 {
-    font-size: var(--biggest-font-size); /* Maintain the font size for the header in the home section */
+    font-size: var(--biggest-font-size); 
   }
 
   #home img {
