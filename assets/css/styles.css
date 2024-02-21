@@ -1,0 +1,403 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 5rem;
+
+  /*========== Colors ==========*/
+
+  --text-color: hsl(228, 15%, 20%);
+  --primary-body-color: hsl(180, 0, 100%);
+  /* --container-color: hsl(228, 15%, 15%); */
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 2rem;
+  --bigger-font-size: 1.75rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+}
+
+ /*========== Theme Change ==========*/
+
+ .dark-theme {
+  --text-color: hsl(180, 0, 100%);
+  --primary-body-color: hsl(228, 15%, 20%);
+ }
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--primary-body-color);
+  color: var(--text-color);
+}
+
+
+header {
+  background-color:  #4070f4;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  /* z-index: 1000; */
+}
+
+#icon {
+  cursor: pointer;
+
+}
+
+nav {
+  display: flex;
+  margin-left: 25rem;
+}
+
+nav li {
+  margin-right: 3rem;
+}
+
+main {
+  margin: 2rem 6rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #080808;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+nav img {
+  max-width: 50%;
+  height: auto;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#home h2 {
+  font-size: var(--biggest-font-size);
+  margin-bottom: 2rem 0 2rem;
+  color: var(--text-color);
+}
+
+#home img {
+  max-width: 45%;
+  height: auto;
+} 
+
+#home .name {
+  font-size: 2.5rem;
+  color: #4070f4;
+}
+
+#home .role {
+  color: #9fa1ad;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  font-size: 20px;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  margin: 2rem auto;
+  background-color: #4070f4;
+  color: #fff;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.skill_body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#skills img {
+  max-width: 48%;
+  height: auto;
+}
+
+#skill_list li {
+  list-style: none;
+  margin: 1.5rem 2rem;
+  padding: 0;
+
+}
+
+#skills h2{
+  font-size: var(--bigger-font-size);
+  text-align: center;
+  color: #4070f4;
+  border-bottom: 5px solid #4070f4;
+}
+
+#skill_list {
+  width: 30rem;
+  padding: 7px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#skill li {
+  margin: 7px 0;
+  padding: 5px;
+}
+
+#skill_list li h3 {
+  color: var(--text-color);
+}
+
+.bar {
+  background: #353b48;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-beizier(.25,.8,.25,1);
+}
+
+.bar:hover {
+  box-shadow:  0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+
+.html {
+  width: 90%;
+  animation: html 3s;
+}
+
+.css {
+  width: 60%;
+  animation: css 3s;
+}
+
+.javascript {
+  width: 45%;
+  animation: javascript 3s;
+}
+
+.react {
+  width: 37%;
+  animation: react 3s;
+}
+
+.python {
+  width: 30%;
+  animation: python 3s;
+}
+
+.version_control {
+  width: 50%;
+  animation: version_control 3s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 37%;
+  }
+}
+
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+
+@keyframes version_control {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+#projects h2{
+  font-size: var(--bigger-font-size);
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4070f4;
+  border-bottom: 5px solid #4070f4;
+}
+
+#projects img {
+  max-width: 50%;
+  height: auto;
+}
+
+.my_projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.all_projects {
+  width: 30rem;
+  color: var(--text-color);
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.project h3 {
+  color: #4070f4;
+}
+
+#contact h2 {
+  font-size: var(--bigger-font-size);
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4070f4;
+  border-bottom: 5px solid #4070f4;
+}
+
+#contact p {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.4rem;
+}
+
+footer {
+  text-align: center;
+  color: var(--text-color);
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+
+.section {
+  padding-block: 5rem 2rem;
+}
+
+
+/*=============== HEADER & NAV ===============*/
+
+
+
+/*=============== HOME ===============*/
+
+
+/*=============== BUTTON ===============*/
+
+
+/*=============== ABOUT ===============*/
+
+
+/*=============== SKILLS ===============*/
+
+
+/*=============== SERVICES ===============*/
+
+
+/*=============== PROJECTS ===============*/
+
+
+/*=============== CONTACT ===============*/
+
+
+/*=============== FOOTER ===============*/
+
+
+/*=============== SCROLL BAR ===============*/
+
+
+/*=============== SCROLL UP ===============*/
+
+
+/* Show Scroll Up */
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+/* For large devices */
+
+  /* Responsive Design */
+
